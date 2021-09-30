@@ -2,6 +2,15 @@
     display:block;
     text-align:center;
 }
+.insert{
+    background-color:rgb(255, 196, 0);
+    margin:50px;
+    border:5px solid rgb(255, 196, 0);
+    width: 50%;
+    text-align:center;
+    display:block;
+    margin: 50px auto;
+}
 .logo-img{
     width:300px;
 }   
