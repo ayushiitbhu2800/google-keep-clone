@@ -1,13 +1,29 @@
-
+import Note from "./Note";
+import { useState } from "react";
 const InsertNotes=()=>{ 
+    const [arr,changeArr]=useState([{
+        "task":"",
+        "desc":""
+    }]);
+    let y="";
+    let z="";
+    const task=(event)=>{
+        y=event.target.value;
+        console.log(y);
+    }
+    const desc=(event)=>{
+        z=event.target.value;
+        console.log(z);
+    }
+    const add=()=>{
+        let gh={"task": y, "desc":z};
+        changeArr((prev)=>{
+            console.log(prev);
+        })
+        // console.log(arr);
+    }
     return (
-        <div className="logo insert">
-            <textarea id="heading" placeholder="Task"/>
-            <br/>
-            <textarea id="desc" placeholder="Description"/>
-            <br/>
-            <button type="submit" className="add">Add</button>
-        </div>
+        <Note/>
     );
 }
 export default InsertNotes;
