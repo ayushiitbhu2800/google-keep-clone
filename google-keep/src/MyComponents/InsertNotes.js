@@ -2,7 +2,11 @@
 const InsertNotes=()=>{ 
     return (
         <div className="logo insert">
-            <input type="text"/>
+            <textarea id="heading" placeholder="Task"/>
+            <br/>
+            <textarea id="desc" placeholder="Description"/>
+            <br/>
+            <button type="submit" className="add">Add</button>
         </div>
     );
 }
