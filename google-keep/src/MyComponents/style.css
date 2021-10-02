@@ -1,29 +1,39 @@
-.logo{
-    display:block;
-    text-align:center;
+.logo {
+  display: block;
+  text-align: center;
 }
-.insert{
-    background-color:rgb(255, 196, 0);
-    margin:50px;
-    border:5px solid rgb(255, 196, 0);
-    width: 50%;
-    text-align:center;
-    display:block;
-    margin: 50px auto;
+.insert {
+  background-color: rgb(255, 196, 0);
+  margin: 50px;
+  border: 5px solid rgb(255, 196, 0);
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 50px auto;
 }
-.logo-img{
-    width:300px;
-}   
-input[type="text"]{
-    border:rgb(255, 196, 0);
+.logo-img {
+  width: 300px;
 }
-.add:hover{
-    color:chartreuse;
-    background-color:blue;
-    cursor:pointer;
+input[type="text"] {
+  border: rgb(255, 196, 0);
 }
-.add{
-    border: 3px solid blue;
-    background-color:rgb(255, 196, 0);
-    border-radius:20px;
+.add:hover {
+  color: chartreuse;
+  background-color: blue;
+  cursor: pointer;
+}
+.add {
+  border: 3px solid blue;
+  background-color: rgb(255, 196, 0);
+  border-radius: 20px;
+}
+.display {
+  background-color: rgb(255, 196, 0);
+  width: 80%;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.list {
+  border: ;
 }

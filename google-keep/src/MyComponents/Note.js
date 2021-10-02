@@ -49,7 +49,7 @@ const Note = () => {
           Add
         </button>
       </div>
-      <div>
+      <div className="list">
         {notes.map((content, index) => (
           <Display key={index} heading={content.task} desc={content.desc} />
         ))}
