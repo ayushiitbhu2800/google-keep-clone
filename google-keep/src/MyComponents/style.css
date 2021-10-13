@@ -2,6 +2,16 @@
   display: block;
   text-align: center;
 }
+.inside {
+  padding: 5px;
+  margin: 10px;
+  width: 20%;
+  clear: left;
+}
+.list {
+  display: flex;
+  /* float: left; */
+}
 .insert {
   background-color: rgb(255, 196, 0);
   margin: 50px;

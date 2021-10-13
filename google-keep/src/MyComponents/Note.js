@@ -49,10 +49,17 @@ const Note = () => {
           Add
         </button>
       </div>
-      <div className="list">
-        {notes.map((content, index) => (
-          <Display key={index} heading={content.task} desc={content.desc} />
-        ))}
+      <div className="note">
+        <div className="list">
+          {notes.map((content, index) => (
+            <Display
+              className="inside"
+              key={index}
+              heading={content.task}
+              desc={content.desc}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
