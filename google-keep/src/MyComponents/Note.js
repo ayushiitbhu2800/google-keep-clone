@@ -6,9 +6,11 @@ const Note = () => {
   let [item, assignItem] = useState({
     task: "",
     desc: "",
+    color: "",
   });
   const insert = (event) => {
     const { name, value } = event.target;
+    console.log(name);
     assignItem((prev) => {
       return { ...prev, [name]: value };
     });
@@ -20,9 +22,11 @@ const Note = () => {
       changeNotes((prev) => {
         return [...prev, item];
       });
+      console.log(item.color);
       assignItem({
         task: "",
         desc: "",
+        color: "",
       });
     }
   };
@@ -45,12 +49,25 @@ const Note = () => {
           onChange={insert}
         />
         <br />
+        <div Style="margin:20px;">
+          <select value={item.color}>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
         <button type="submit" className="add" onClick={add}></button>
       </div>
       <div className="note">
         <div className="list">
           {notes.map((content, index) => (
-            <Display key={index} heading={content.task} desc={content.desc} />
+            <Display
+              key={index}
+              heading={content.task}
+              desc={content.desc}
+              color={content.color}
+            />
           ))}
         </div>
       </div>

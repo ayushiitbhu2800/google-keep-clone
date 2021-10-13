@@ -40,6 +40,7 @@ input[type="text"] {
 }
 .display {
   background-color: rgb(255, 196, 0);
+  /* background-color: aqua; */
   width: 250px;
   height: 250px;
   margin: 10px 10px;
