@@ -45,9 +45,7 @@ const Note = () => {
           onChange={insert}
         />
         <br />
-        <button type="submit" className="add" onClick={add}>
-          Add
-        </button>
+        <button type="submit" className="add" onClick={add}></button>
       </div>
       <div className="note">
         <div className="list">
