@@ -52,12 +52,7 @@ const Note = () => {
       <div className="note">
         <div className="list">
           {notes.map((content, index) => (
-            <Display
-              className="inside"
-              key={index}
-              heading={content.task}
-              desc={content.desc}
-            />
+            <Display key={index} heading={content.task} desc={content.desc} />
           ))}
         </div>
       </div>
